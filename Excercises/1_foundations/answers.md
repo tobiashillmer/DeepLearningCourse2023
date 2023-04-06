@@ -5,4 +5,4 @@
 1. 
 
 
-## Description of pracitical answers
+## Description of practical answers
