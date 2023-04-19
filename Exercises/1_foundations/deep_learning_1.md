@@ -75,6 +75,18 @@ We can see in the Jupyter-Notebook, that the Network performs similar for most m
 different batch sizes for mini-batch training. Take at least three choices and shortly
 discuss the differences.
 
+| Batch size | Test set accuracy |
+|------------|-------------------|
+| 2          | 0.893300          |
+| 16         | 0.912100          |
+| 32         | 0.905300          |
+| 64         | 0.898400          |
+| 256        | 0.898700          |
+| 1024       | 0.907300          |
+
+
+You can see in the results that there is an optimum batch size for ADAM which is between 16-32 And performance slightly degrades for higher and lower batch sizes. Also a very high batch size also has a comparable result which is unexpected. Overall the differences are smaller than I had expected.
+
 
 
 
