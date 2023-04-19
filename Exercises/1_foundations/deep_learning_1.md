@@ -61,12 +61,14 @@ The length of the answer is limited to one page in total for the description of 
 including images. Please provide: short description what you did, how it is done, what is
 the result. Please be prepared to present the solution in the exercises.
 
+[LinkToRepo](https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/1_foundations/deep_learning_1_practical.ipynb)
+
 1. Take the Fashion MNIST data set and a suitable model architecture. Display the
 effect of the choice of the activation function, i.e., investigate different learning and
 generalization behavior if sgd or a modern activation function (e.g. relu, selu, ...) is
 used. Compare the behavior of at least three different activation functions.
 
-We can see in the Jupyter-Notebook, that the Network works similar 
+We can see in the Jupyter-Notebook, that the Network performs similar for most modern activation function, with the SELU function performing best. In this case the network even performs similar for no activation function, which suggest that a similar performance could also be archived using only on dense layer. Only the sigmoid activation does not yield good results. There the network collapses an classifies everything as a T-Shirt.
 
 
 2. Take the same setup and the ADAM optimizer, display the result of the choice of
