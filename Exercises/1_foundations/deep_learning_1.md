@@ -61,6 +61,8 @@ The length of the answer is limited to one page in total for the description of 
 including images. Please provide: short description what you did, how it is done, what is
 the result. Please be prepared to present the solution in the exercises.
 
+[LinkToRepo](https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/1_foundations/deep_learning_1_practical.ipynb)
+
 1. Take the Fashion MNIST data set and a suitable model architecture. Display the
 effect of the choice of the activation function, i.e., investigate different learning and
 generalization behavior if sgd or a modern activation function (e.g. relu, selu, ...) is
