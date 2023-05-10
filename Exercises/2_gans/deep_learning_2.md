@@ -61,3 +61,11 @@ classes.
 how it is trained and the result.
 
 [https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/2_gans/deep_learning_2_2_practical.ipynb](https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/2_gans/deep_learning_2_2_practical.ipynb)
+
+The diffusion model takes two inputs: a diffused image to which some noise has been applied and the current timestep.
+This means that the same model is used for each timestep. During training a random image and a random timestep are selected. 
+Appropriate noise is then applied to the image in a single step using a reparametrization trick. The model is then trained for that timestep only.
+In order to sample an image first random noise is sampled to which the model is then applied starting at timestep T down until timestep 0 at which point a plausible image is hopefully generated.
+The results of our adapted basic model are not great, possibly due to a simplistic U-Net structure (no skip connections) or issues with the beta schedule and forward diffusion process. Possibly not enough noise is applied such that the resulting image is not similar enough to a pure normal distribution which means the reverse diffusion during sampling is not powerful enough to fully extract an image from the sampled pure noise.
+Results might be improved by emplying a different beta schedule and using many more time steps.
+
