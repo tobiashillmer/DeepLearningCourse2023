@@ -55,7 +55,9 @@ happens if you interpolate in between two points in the latent space for the res
 encoded data points? Display examples within a class and in between two different
 classes.
 
+[https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/2_gans/vae.ipynb](https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/2_gans/vae.ipynb)
 
 2. Use any other generative model and train it using the Fashion MNIST data. Describe
 how it is trained and the result.
 
+[https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/2_gans/deep_learning_2_2_practical.ipynb](https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/2_gans/deep_learning_2_2_practical.ipynb)
