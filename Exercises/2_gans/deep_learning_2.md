@@ -1,6 +1,5 @@
-Exercise Sheet Deep Learning
-Part2: Generative Models
-Summer 23
+### Exercise Sheet Deep Learning, Part2: Generative Models, Summer 23
+
 This sheet includes a theoretical part and a practical assignment of the first part of the
 lecture Deep Learning (Foundations). It should be handed in as pdf in groups of three via
 ekvv-Moodle until 20.4.23. at 10.a.m (sharp). Please include a link to the code (e.g. Colab)
