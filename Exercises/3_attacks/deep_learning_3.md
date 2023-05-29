@@ -10,33 +10,33 @@ name3: Yasar Plückebaum
 
 1. For the following attacks, it holds:
 - Backdoor attacks try to change the function such that the network can no longer be used. -> NO
-- Data poisoning attacks need access to the training data. -> YES
-- Model inversion attacks can be countered using robust training. -> NO??
+- Data poisoning attacks need access to the training data. -> YES, malicious data needs to be added.
+- Model inversion attacks can be countered using robust training. -> NO, but it depends on whether measures such as Differential Privacy count as robust training.
 - Universal attacks provide universal backdoors for arbitrary models. -> NO
 
 2. For the following adversarial attacks, it holds:
 - Fast gradient sign and basic iterative method are based on gradient schemes. -> YES
-- Deepfool uses an adaptive step size. -> NO
-- Universal adversarial perturbations incorporate a regularization against translations of visual objects in scenes. -> NO?
-- Adversarial attacks need to have access to the model gradient or estimate it implicitly -> NO??
+- Deepfool uses an adaptive step size. -> YES
+- Universal adversarial perturbations incorporate a regularization against translations of visual objects in scenes. -> 
+- Adversarial attacks need to have access to the model gradient or estimate it implicitly -> NO
 
 3. Defenses against attacks ...
-- Data poisoning can be detected by clustering the training set. -> YES
-- Homomorphic privacy enables the public release of models trained on personal data. -> NO
-- Adversarial training solves the adversarial training loss exactly via computing worst case adversarials in the inner loop. -> NO??
+- Data poisoning can be detected by clustering the training set. -> NO, outliers are detected using the class mean on certified data
+- Homomorphic privacy enables the public release of models trained on personal data. -> NO, the model would be unusable without decryption
+- Adversarial training solves the adversarial training loss exactly via computing worst case adversarials in the inner loop. -> NO, only approximately
 - Certified defenses can rely on Lipschitz bounds. -> YES
 
 4. Attacks in reality:
 - Some training data might deteriorate model accuracy rather than helping it -> YES
 - Attacks need to address the whole input space -> NO
 - Attacks can be designed such that they hold for different object view points or different scenes in a stream -> YES
-- Data compression can provably avoid attacks. -> NO
+- Data compression can provably avoid attacks. -> NO, but can help against some types of attacks
 
 5. The following holds:
-- Robustified networks have the same accuracy as original ones
-- Adversarial risk and minimum perturbation risk are identical for the mean squared error. -> NO??
-- Adversarial training complexity strongly depends on the design of adversarial attacks in the inner loop -> YES??
-- Adversarial examples do not exist for linear models. -> NO??
+- Robustified networks have the same accuracy as original ones -> NO
+- Adversarial risk and minimum perturbation risk are identical for the mean squared error. -> NO
+- Adversarial training complexity strongly depends on the design of adversarial attacks in the inner loop -> YES, if design is more efficient
+- Adversarial examples do not exist for linear models. -> NO
 
 #### PARTII – PRACTICE
 
