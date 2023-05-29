@@ -1,4 +1,4 @@
-### Exercise Sheet Deep Learning, Part2: Generative Models, Summer 23
+### Exercise Sheet Deep Learning, Part3: Attacks, Summer 23
 
 This sheet includes a theoretical part and a practical assignment of the third part of the
 lecture Deep Learning (Attacks).
@@ -40,14 +40,6 @@ name3: Yasar Plückebaum
 
 #### PARTII – PRACTICE
 
-1. Use a deep network for the MNIST data set. Perform at least three different types of
-targeted attacks on 5 different numbers, including one attack which puts particular
-effort on the fact that the attacked pattern is indistinguishable from the original one..
-Evaluate the performance of the attacks visually (which attack does not change the
-visual impression) and quantitatively (distance of attack to original sample, success
-rate of the approach).
+1. Use a deep network for the MNIST data set. Perform at least three different types of targeted attacks on 5 different numbers, including one attack which puts particular effort on the fact that the attacked pattern is indistinguishable from the original one. Evaluate the performance of the attacks visually (which attack does not change the visual impression) and quantitatively (distance of attack to original sample, success rate of the approach).
 
-2. Use the FashionMNIST data set and a deep model. Create a universal attack, which
-attacks more than one input at once. Describe how you approach this, and evaluate
-the performance (success rate). Evaluate whether the universal attack also transfers
-to other deep learning architectures.
+2. Use the FashionMNIST data set and a deep model. Create a universal attack, which attacks more than one input at once. Describe how you approach this, and evaluate the performance (success rate). Evaluate whether the universal attack also transfers to other deep learning architectures.
