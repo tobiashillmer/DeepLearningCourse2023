@@ -42,7 +42,11 @@ name3: Yasar Plückebaum
 
 1. Use a deep network for the MNIST data set. Perform at least three different types of targeted attacks on 5 different numbers, including one attack which puts particular effort on the fact that the attacked pattern is indistinguishable from the original one. Evaluate the performance of the attacks visually (which attack does not change the visual impression) and quantitatively (distance of attack to original sample, success rate of the approach).
 
+Code is here: https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/3_attacks/deep_learning_3_1_practical.ipynb
+
 2. Use the FashionMNIST data set and a deep model. Create a universal attack, which attacks more than one input at once. Describe how you approach this, and evaluate the performance (success rate). Evaluate whether the universal attack also transfers to other deep learning architectures.
+
+Code is here: https://github.com/tobiashillmer/DeepLearningCourse2023/blob/main/Exercises/3_attacks/deep_learning_3_2_practical.ipynb
 
 The universal pertubation works by computing a pertubation, which leads to an missclassification for each datapoints, and by combining these pertubations into a universal one usable for all images.
 The universal pertubation attack almost halfes the accuracy (from 92.13% to 47.11), while not affecting recognition through a human. However the effects of the attack are clearly visible.
